@@ -35,7 +35,7 @@ export function DoctorPanel({
             <article className="doctor-card" key={doctor.id}>
               <div className="doctor-card-top">
                 <div className={`doctor-avatar avatar-${index}`}>
-                  <Stethoscope size={20} />
+                  <Stethoscope size={18} />
                 </div>
                 <div className="doctor-identity">
                   <h3>{doctor.name}</h3>
@@ -75,7 +75,7 @@ export function DoctorPanel({
                     className="complete-button"
                     onClick={() => onComplete(active.id)}
                   >
-                    <Check size={15} /> Complete visit
+                    <Check size={14} /> Complete visit
                   </button>
                 </>
               ) : (
@@ -85,7 +85,7 @@ export function DoctorPanel({
                     disabled={doctor.status !== "available" || !waitingCount}
                     onClick={() => onCall(doctor.id)}
                   >
-                    Call next <ArrowRight size={15} />
+                    Call next <ArrowRight size={14} />
                   </button>
                   <button
                     className="break-button"

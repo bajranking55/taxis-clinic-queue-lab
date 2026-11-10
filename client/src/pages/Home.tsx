@@ -201,7 +201,7 @@ export default function Home() {
       <aside className="sidebar">
         <a href="/" className="brand" aria-label="Taxis home">
           <span className="brand-mark">
-            <ListOrdered size={22} />
+            <ListOrdered size={20} />
           </span>
           <span>
             taxis<span className="brand-dot">.</span>
@@ -233,7 +233,7 @@ export default function Home() {
         </nav>
         <div className="sidebar-bottom">
           <div className="demo-card">
-            <FlaskConical size={21} />
+            <FlaskConical size={20} />
             <strong>A safe place to explore.</strong>
             <p>
               Fictional visitors.
@@ -258,7 +258,7 @@ export default function Home() {
       <main className="main-workspace">
         <header className="topbar">
           <div className="breadcrumb">
-            Workspace <ChevronRight size={13} />
+            Workspace <ChevronRight size={14} />
             <span>
               {view === "queue"
                 ? "Live queue"
@@ -319,13 +319,13 @@ export default function Home() {
                 className="secondary-button reset-control"
                 onClick={() => setPendingAction({ kind: "reset" })}
               >
-                <RotateCcw size={15} /> Reset demo
+                <RotateCcw size={16} /> Reset demo
               </button>
               <button
                 className="primary-button"
                 onClick={() => setIntakeOpen(true)}
               >
-                <Plus size={17} /> New token
+                <Plus size={16} /> New token
               </button>
             </div>
           </section>
@@ -336,7 +336,7 @@ export default function Home() {
               clinical triage, medical advice, or a real hospital system.
             </span>
             <button onClick={() => setView("rules")}>
-              Read the rules <ArrowRight size={13} />
+              Read the rules <ArrowRight size={14} />
             </button>
           </div>
           {storageUnavailable && (
@@ -354,7 +354,7 @@ export default function Home() {
               >
                 <div className="summary-item">
                   <div className="summary-label">
-                    <UsersRound size={15} /> Waiting now
+                    <UsersRound size={14} /> Waiting now
                   </div>
                   <strong>{String(summary.waiting).padStart(2, "0")}</strong>
                   <span>
@@ -365,7 +365,7 @@ export default function Home() {
                 </div>
                 <div className="summary-item">
                   <div className="summary-label">
-                    <Activity size={15} /> In consultation
+                    <Activity size={14} /> In consultation
                   </div>
                   <strong>{String(summary.consulting).padStart(2, "0")}</strong>
                   <span>
@@ -374,14 +374,14 @@ export default function Home() {
                 </div>
                 <div className="summary-item">
                   <div className="summary-label">
-                    <CheckCircle2 size={15} /> Completed
+                    <CheckCircle2 size={14} /> Completed
                   </div>
                   <strong>{String(summary.completed).padStart(2, "0")}</strong>
                   <span>visits this demo session</span>
                 </div>
                 <div className="summary-item">
                   <div className="summary-label">
-                    <Clock3 size={15} /> Estimated average wait
+                    <Clock3 size={14} /> Estimated average wait
                   </div>
                   <strong>
                     {averageEstimate === null ? "—" : averageEstimate}
@@ -437,7 +437,7 @@ export default function Home() {
                       ))}
                     </div>
                     <label className="search-input">
-                      <Search size={15} />
+                      <Search size={16} />
                       <input
                         value={search}
                         onChange={event => setSearch(event.target.value)}
@@ -567,7 +567,7 @@ export default function Home() {
                                           )
                                         }
                                       >
-                                        <ArrowLeft size={15} />
+                                        <ArrowLeft size={16} />
                                       </button>
                                     </>
                                   ) : token.status === "waiting" ? (
@@ -582,14 +582,14 @@ export default function Home() {
                                         })
                                       }
                                     >
-                                      <X size={15} />
+                                      <X size={16} />
                                     </button>
                                   ) : (
                                     <span className="finished-check">
                                       {token.status === "completed" ? (
-                                        <CheckCircle2 size={17} />
+                                        <CheckCircle2 size={16} />
                                       ) : (
-                                        <X size={15} />
+                                        <X size={16} />
                                       )}
                                     </span>
                                   )}
@@ -603,7 +603,7 @@ export default function Home() {
                   </div>
                   {!visible.length && (
                     <div className="empty-state">
-                      <ListOrdered size={31} />
+                      <ListOrdered size={32} />
                       <h3>
                         {search
                           ? "No matching tokens."
@@ -633,7 +633,7 @@ export default function Home() {
                       · standard tokens age after 30 min
                     </span>
                     <button onClick={() => setView("rules")}>
-                      Why this order? <ArrowRight size={13} />
+                      Why this order? <ArrowRight size={14} />
                     </button>
                   </div>
                   <div className="next-up-card">
@@ -698,11 +698,11 @@ export default function Home() {
                   </p>
                   <div className="rule-example">
                     <span className="category-badge assisted">Assisted</span>
-                    <Plus size={13} />
+                    <Plus size={14} />
                     <span className="category-badge aged">
                       Standard ≥ 30 min
                     </span>
-                    <ArrowRight size={15} />
+                    <ArrowRight size={14} />
                     <strong>Arrival order</strong>
                   </div>
                   <p className="rule-footnote">
@@ -762,13 +762,13 @@ export default function Home() {
                       className="secondary-button"
                       onClick={() => setPendingAction({ kind: "reset" })}
                     >
-                      <RotateCcw size={15} /> Reload fictional sample
+                      <RotateCcw size={16} /> Reload fictional sample
                     </button>
                     <button
                       className="secondary-button"
                       onClick={() => setPendingAction({ kind: "empty" })}
                     >
-                      <ListOrdered size={15} /> Start with an empty queue
+                      <ListOrdered size={16} /> Start with an empty queue
                     </button>
                   </div>
                 </div>
@@ -796,7 +796,7 @@ export default function Home() {
                     .map(event => (
                       <article key={event.id} className="event-row">
                         <span className="event-dot">
-                          <Activity size={15} />
+                          <Activity size={16} />
                         </span>
                         <div>
                           <strong>{event.message}</strong>
@@ -810,7 +810,7 @@ export default function Home() {
                 </div>
               ) : (
                 <div className="empty-state">
-                  <Activity size={30} />
+                  <Activity size={32} />
                   <h3>A fresh session.</h3>
                   <p>
                     Issue a token or update a room to start the activity trail.
@@ -822,7 +822,7 @@ export default function Home() {
 
           <footer className="workspace-footer">
             <span>
-              <FlaskConical size={13} /> Built to learn. Not to diagnose.
+              <FlaskConical size={14} /> Built to learn. Not to diagnose.
             </span>
             <span>
               AI-assisted prototype <span className="footer-separator">/</span>{" "}
@@ -849,7 +849,7 @@ export default function Home() {
       >
         <AlertDialogContent className="confirm-dialog">
           <AlertDialogHeader>
-            <AlertDialogTitle>
+            <AlertDialogTitle className="dialog-title">
               {pendingAction?.kind === "remove"
                 ? "Remove this demo token?"
                 : pendingAction?.kind === "empty"
@@ -863,8 +863,11 @@ export default function Home() {
             </AlertDialogDescription>
           </AlertDialogHeader>
           <AlertDialogFooter>
-            <AlertDialogCancel>Keep current state</AlertDialogCancel>
+            <AlertDialogCancel className="secondary-button">
+              Keep current state
+            </AlertDialogCancel>
             <AlertDialogAction
+              className="primary-button"
               onClick={() => {
                 if (pendingAction?.kind === "remove" && pendingAction.id)
                   update(

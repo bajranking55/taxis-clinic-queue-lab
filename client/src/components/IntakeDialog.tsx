@@ -63,7 +63,7 @@ export function IntakeDialog({
             Fictional visitor label <span>Optional</span>
           </label>
           <div className="input-icon-wrap">
-            <UserRound size={17} />
+            <UserRound size={16} />
             <input
               id="visitor-label"
               value={label}
@@ -115,14 +115,14 @@ export function IntakeDialog({
             </label>
           </fieldset>
           <div className="safety-note">
-            <ShieldCheck size={17} />
+            <ShieldCheck size={16} />
             <p>
               This category is for scheduling demonstrations only. It is not
               clinical triage or medical advice.
             </p>
           </div>
           <button type="submit" className="primary-button dialog-submit">
-            Issue token <ArrowRight size={17} />
+            Issue token <ArrowRight size={16} />
           </button>
         </form>
       </DialogContent>
