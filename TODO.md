@@ -13,8 +13,10 @@ Visual implementation: editorial Swiss operations console with warm ivory canvas
 - [x] Automated checks: runnable tests cover queue ordering, priority behaviour, doctor eligibility, invalid/valid transitions, wait-time calculations, empty-clinic lifecycle, capped-history ID uniqueness and snapshot safety.
 - [x] Source and documentation: polished README, setup/run/test commands, simple architecture and engineering explanations, limitations and future improvements. AI assistance and starter provenance are documented honestly.
 - [x] Beginner Git/GitHub handoff guide: repo/commit/remote in plain language; account/repo setup, first save/push, README verification and future update workflow. FIRST-RUN.md explains the actual demo. No fabricated commit dates or experience claims.
-- [ ] Final delivery: meaningful runnable Preview, checked source and recorded project checkpoint; save/connect to user's new private GitHub repository through the owner-confirmed connection flow. The app/source/checks are ready; GitHub transfer remains pending until owner authorisation, push and completion verification.
+- [x] Final delivery: meaningful runnable Preview, checked source and recorded project checkpoint; save/connect to user's new private GitHub repository through the owner-confirmed connection flow. Source main was pushed to `bajranking55/taxis-clinic-queue-lab`, and the repository transition completed server-side verification. GitHub reports a private repository with default branch `main`; the project now uses that repository.
 
 ## Existing evidence
 
 `pnpm check`, `pnpm test` (54 tests across 6 files), `pnpm build`, `git diff --check` and HTTP health/route/asset checks passed. A read-only implementation review found empty-workflow, corrupted-state and metric-label defects; they were fixed with regression tests. The app-side session-replay collector was disabled. No database queue or patient API was added. No browser screenshot or production clinical validation was claimed.
+
+GitHub delivery verified on 10 November 2026: https://github.com/bajranking55/taxis-clinic-queue-lab . Implementation commit `5d18d87a11953f87829184be5592193b827d09ab` was confirmed on target main before completing the repository connection. This is source-code delivery; no production website publication was requested or claimed.
